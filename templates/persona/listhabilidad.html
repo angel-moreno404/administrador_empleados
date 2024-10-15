@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color: chartreuse;">aqui</h1>
+  
+    <form method="GET">{% csrf_token %}
+        <input type="text" name="skill" id="skill" placeholder="ingrese id del usuario">
+        <button type="submit">buscar</button>
+    </form>
+    <ul>
+        {% for date in dates %}
+        <li>{{date}}</li>
+        {% endfor%}
+    </ul>
+</body>
+</html>

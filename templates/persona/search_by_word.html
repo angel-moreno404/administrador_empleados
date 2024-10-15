@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primer input</title>
+</head>
+<body>
+    <form method="GET">{% csrf_token %}
+        <input type="text" name="kword" id="kword" placeholder="buscar">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h1>answer : </h1>
+    {{dates}}
+</body>
+</html>

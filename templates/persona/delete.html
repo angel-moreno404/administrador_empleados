@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% block title%}
+    eliminando empleado
+{%endblock title%}
+{% block content %}
+    {%include 'includes/header.html'%}
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell">
+                <h1>confirma que deaseas eliminar a {{empleado.first_name}}</h1>
+            </div>
+
+            <div class="cell">
+                <form method="post">{% csrf_token %}
+                    <div class="callout alert" data-closable>
+                        <h5>This is Important!</h5>
+                        <p>confrima que desea eliminar ...</p>
+                        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <button type="submit" class="alert button">Delete</button>
+                    <td><a class="button " style="border-radius: 20px; " href="{% url 'persona_app:manage'%}">Cancelar</a></td>
+                   
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+{%endblock content%}
+
+    

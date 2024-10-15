@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+{% block title%}
+    new register
+{% endblock title %}
+{% block content %}
+    {%include 'includes/header.html'%}
+
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell">
+                <h1>creando....</h1>
+            </div>
+            
+                <form class=" cell grid-margin-x  grid-x" method="POST" enctype="multipart/form-data">{% csrf_token %}
+                <div class="medium-6 cell">
+                    <label>Nombre
+                      {{form.first_name}}
+                    </label>
+                  </div>
+                  <div class="medium-6 cell">
+                    <label>Apellido
+                      {{form.last_name}}
+                    </label>
+                  </div>
+                  <div class="medium-6 cell">
+                    <label>trabajo
+                      {{form.job}}
+                    </label>
+                  </div>
+                  <div class="medium-6 cell">
+                    <label>Departamento
+                      {{form.departamento}}
+                    </label>
+                  </div>
+                  <div class="medium-6 cell">
+                    <label> habilidad
+                      {{form.habilidad}}
+                    </label>
+                  </div>
+                  <div class="medium-6 cell">
+                    <label>hoja_vida
+                      {{form.hoja_vida}}
+                    </label>
+                  </div>
+                  <div class="medium-6 cell">
+                    <label> cargar imagen
+                      {{form.avatar}}
+                    </label>
+                  </div>
+                  <div class="medium-6 cell">
+                    <label>
+                        <button type="submit" class="submit success button">Save</button>
+                    </label>
+                  </div>
+                </form>                  
+            
+        </div>
+
+    </div>
+{%endblock content%}
