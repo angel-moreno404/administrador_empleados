@@ -31,7 +31,7 @@ import dj_database_url
     #'default':dj_database_url.parse('postgresql://produtiondatabase_user:if6ucxTXfI8sYPXERcKr3doIbKV7CiiX@dpg-cs8jce08fa8c73but0fg-a.ohio-postgres.render.com/produtiondatabase')
 DATABASES = {
     # 'default':dj_database_url.parse(env('DATABASE_URL'))
-    'default':dj_database_url.parse('postgresql://produtiondatabase_user:if6ucxTXfI8sYPXERcKr3doIbKV7CiiX@dpg-cs8jce08fa8c73but0fg-a.ohio-postgres.render.com/produtiondatabase')
+    'default':dj_database_url.parse('postgresql://produtiondatabase_user:if6ucxTXfI8sYPXERcKr3doIbKV7CiiX@dpg-cs8jce08fa8c73but0fg-a/produtiondatabase')
 
 }
 
